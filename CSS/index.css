@@ -126,3 +126,31 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+footer {
+  background: #006094;
+  padding: 15px 0;
+  font-size: 1.5rem;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: #e6e6e6;
+  width: 100%;
+  margin: auto;
+}
+footer .footer-content .icons {
+  margin: auto;
+}
+footer .footer-content i {
+  font-size: 2.5rem;
+  color: #00b8bd;
+  padding: 20px 20px;
+}
