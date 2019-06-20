@@ -1,4 +1,23 @@
 footer {
-  .custom-flex(column);
-  background: @picton-blue;
+  background: darken(@picton-blue, 35%);
+  padding: 15px 0;
+  font-size: 1.5rem;
+  .footer-content {
+    .custom-flex(column);
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    color: darken(white, 10%);
+    width: 50%;
+    margin: auto;
+
+    .icons {
+      .custom-flex(row, space-evenly);
+      width: 35%;
+    }
+    i {
+      font-size: 2.5rem;
+      color: darken(@electric-blue, 25%);
+      padding: 20px 0;
+    }
+  }
 }
