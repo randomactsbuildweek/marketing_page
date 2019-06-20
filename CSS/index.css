@@ -127,5 +127,8 @@ table {
   border-spacing: 0;
 }
 footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background: #48beff;
 }
