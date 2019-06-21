@@ -136,17 +136,20 @@ table {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  font-family: "Montserrat", sans-serif;
 }
 .main-content.home-page h3 {
+  color: white;
+  font-size: 1.75rem;
   text-align: center;
-  margin: 20px;
+  margin: 55px;
 }
 .main-content.home-page .reasons {
   display: flex;
   justify-content: center;
   flex-direction: row;
   width: 70%;
-  margin: auto;
+  margin: 0 auto 60px auto;
 }
 .main-content.home-page .reasons .reason-to-use {
   display: flex;
@@ -156,7 +159,18 @@ table {
   margin: 0 15px;
   width: 33%;
 }
+.main-content.home-page .reasons .reason-to-use h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin: 30px;
+}
+.main-content.home-page .reasons .reason-to-use i {
+  color: #3dfaff;
+  font-size: 3.5rem;
+}
 .main-content.home-page .reasons .reason-to-use p {
+  color: #ffffff;
+  line-height: 1.75;
   margin: auto;
   text-align: center;
 }
