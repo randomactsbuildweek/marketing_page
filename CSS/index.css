@@ -119,85 +119,95 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #3dfaff;
 }
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 .container {
+  font-family: "Montserrat", sans-serif;
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
 }
-.main-content.home-page {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48beff+0,48beff+29,3dfaff+100 */
-  background: #48beff;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #48beff 0%, #48beff 29%, #3dfaff 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #48beff 0%, #48beff 29%, #3dfaff 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #48beff 0%, #48beff 29%, #3dfaff 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48beff', endColorstr='#3dfaff', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
+
+
+#nav {
+  /* top: 3em;
+  left: 0; */
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  font-family: "Montserrat", sans-serif;
-}
-.main-content.home-page h3 {
-  color: white;
-  font-size: 1.75rem;
-  text-align: center;
-  margin: 55px;
-}
-.main-content.home-page .reasons {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  width: 85%;
-  margin: 0 auto 60px auto;
-}
-@media (max-width: 500px) {
-  .main-content.home-page .reasons {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.main-content.home-page .reasons .reason-to-use {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 15px;
-  width: 33%;
-}
-@media (max-width: 500px) {
-  .main-content.home-page .reasons .reason-to-use {
-    width: 80%;
-    margin-bottom: 45px;
-  }
-}
-.main-content.home-page .reasons .reason-to-use h3 {
-  color: #ffffff;
-  font-size: 1.25rem;
-  margin: 30px auto 15px auto;
-}
-.main-content.home-page .reasons .reason-to-use i {
-  color: #3dfaff;
-  font-size: 3.5rem;
-}
-.main-content.home-page .reasons .reason-to-use p {
-  color: #ffffff;
-  line-height: 1.75;
+  padding: 10px;
   margin: auto;
-  text-align: center;
+  width: 100%;
+  cursor: default;
+  justify-content: center;
 }
+
+#nav ul > li {
+  display: flex;
+  padding-right: 2em;
+  display: inline-block;
+  border: 0;
+  /* justify-content: center; */
+  align-content: center;
+}
+
+#nav a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: red;
+}
+
+.actions {
+  display: flex;
+  padding-right: 10%;
+  justify-content: center;
+  align-content: center;
+  border: 0;
+}
+
+header h1 {
+  font-size: 3em;
+  letter-spacing: 13px;
+}
+
+#attention {
+  margin: auto;
+  padding: 15%;
+  padding-right: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+/* #attention div {
+  width: 50%;
+} */
+
+/* .image-featured {
+  width: auto;
+  height: auto;
+} */
+
+.logo {
+  padding: 20px;
+}
+
 footer {
   background: #006094;
   padding: 15px 0;
