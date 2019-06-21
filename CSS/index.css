@@ -131,6 +131,35 @@ table {
   width: 100%;
   margin: 0 auto;
 }
+.main-content.home-page {
+  background-color: #48beff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-content.home-page h3 {
+  text-align: center;
+  margin: 20px;
+}
+.main-content.home-page .reasons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 70%;
+  margin: auto;
+}
+.main-content.home-page .reasons .reason-to-use {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px;
+  width: 33%;
+}
+.main-content.home-page .reasons .reason-to-use p {
+  margin: auto;
+  text-align: center;
+}
 footer {
   background: #006094;
   padding: 15px 0;

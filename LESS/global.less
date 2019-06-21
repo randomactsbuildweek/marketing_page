@@ -3,3 +3,31 @@
   width: 100%;
   margin: 0 auto;
 }
+
+.main-content.home-page {
+  background-color: @picton-blue;
+  .custom-flex(column, center);
+
+  h3 {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .reasons {
+    .custom-flex();
+    width: 70%;
+    margin: auto;
+
+    .reason-to-use {
+      .custom-flex(column);
+      align-items: center;
+      margin: 0 15px;
+      width: 33%;
+
+      p {
+        margin: auto;
+        text-align: center;
+      }
+    }
+  }
+}
