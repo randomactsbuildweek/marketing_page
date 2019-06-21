@@ -5,7 +5,7 @@
 }
 
 .main-content.home-page {
-  background-color: @picton-blue;
+  .gradient-background();
   .custom-flex(column, center);
   font-family: "Montserrat", sans-serif;
 
@@ -18,8 +18,13 @@
 
   .reasons {
     .custom-flex();
-    width: 70%;
+    width: 85%;
     margin: 0 auto 60px auto;
+
+    @media @mobile {
+      .custom-flex(column);
+      align-items: center;
+    }
 
     .reason-to-use {
       .custom-flex(column);
@@ -27,10 +32,15 @@
       margin: 0 15px;
       width: 33%;
 
+      @media @mobile {
+        width: 80%;
+        margin-bottom: 45px;
+      }
+
       h3 {
         color: lighten(@picton-blue, 50%);
-        font-size: 1.5rem;
-        margin: 30px;
+        font-size: 1.25rem;
+        margin: 30px auto 15px auto;
       }
 
       i {
