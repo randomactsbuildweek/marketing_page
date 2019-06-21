@@ -119,18 +119,94 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #3dfaff;
 }
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 .container {
+  font-family: "Montserrat", sans-serif;
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
 }
+
+#nav {
+  /* top: 3em;
+  left: 0; */
+  display: flex;
+  padding: 10px;
+  margin: auto;
+  width: 100%;
+  cursor: default;
+  justify-content: center;
+}
+
+#nav ul > li {
+  display: flex;
+  padding-right: 2em;
+  display: inline-block;
+  border: 0;
+  /* justify-content: center; */
+  align-content: center;
+}
+
+#nav a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: red;
+}
+
+.actions {
+  display: flex;
+  padding-right: 10%;
+  justify-content: center;
+  align-content: center;
+  border: 0;
+}
+
+header h1 {
+  font-size: 3em;
+  letter-spacing: 13px;
+}
+
+#attention {
+  margin: auto;
+  padding: 15%;
+  padding-right: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+/* #attention div {
+  width: 50%;
+} */
+
+/* .image-featured {
+  width: auto;
+  height: auto;
+} */
+
+.logo {
+  padding: 20px;
+}
+
 footer {
   background: #006094;
   padding: 15px 0;
