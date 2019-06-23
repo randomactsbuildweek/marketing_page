@@ -130,23 +130,14 @@ table {
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
 }
 .main-content.home-page {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48beff+0,48beff+29,3dfaff+100 */
   background: #48beff;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #48beff 0%, #48beff 29%, #3dfaff 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #48beff 0%, #48beff 29%, #3dfaff 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #48beff 0%, #48beff 29%, #3dfaff 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48beff', endColorstr='#3dfaff', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
+  background: linear-gradient(140deg, #48beff 0%, #3dfaff 100%);
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-family: "Montserrat", sans-serif;
 }
 .main-content.home-page h3 {
   color: white;
@@ -197,6 +188,32 @@ table {
   line-height: 1.75;
   margin: auto;
   text-align: center;
+}
+.acts-done.home-page {
+  background: #3dfaff;
+  background: linear-gradient(240deg, #3dfaff 0%, #48beff 100%);
+}
+.acts-done.home-page h3 {
+  color: white;
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 55px;
+  margin: 0;
+  padding: 50px;
+}
+.acts-done.home-page .acts-holder {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 150px;
+}
+.acts-done.home-page .acts-holder img {
+  width: 30%;
+  height: auto;
+  margin: 10px;
 }
 footer {
   background: #006094;

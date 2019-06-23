@@ -2,18 +2,15 @@
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
 }
 
 .main-content.home-page {
-  .gradient-background();
+  .gradient-background-down();
   .custom-flex(column, center);
-  font-family: "Montserrat", sans-serif;
 
   h3 {
-    color: white;
-    font-size: 1.75rem;
-    text-align: center;
-    margin: 55px;
+    .section-header();
   }
 
   .reasons {
@@ -53,6 +50,28 @@
         margin: auto;
         text-align: center;
       }
+    }
+  }
+}
+
+.acts-done.home-page {
+  .gradient-background-up();
+  h3 {
+    .section-header();
+    margin: 0;
+    padding: 50px;
+  }
+
+  .acts-holder {
+    .custom-flex();
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 150px;
+    img {
+      width: 30%;
+      height: auto;
+      margin: 10px;
     }
   }
 }
