@@ -219,6 +219,16 @@ table {
   border-radius: 25px;
   box-shadow: 0px 15px 33px -12px #696969;
 }
+@media (max-width: 500px) {
+  .acts-done.home-page .acts-images-holder img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .acts-done.home-page .acts-images-holder img:nth-last-child(-n + 2) {
+    display: none;
+  }
+}
 .acts-done.home-page .acts-signup {
   display: flex;
   justify-content: center;
