@@ -133,8 +133,7 @@ table {
   font-family: "Montserrat", sans-serif;
 }
 .main-content.home-page {
-  background: #48beff;
-  background: linear-gradient(140deg, #48beff 0%, #3dfaff 100%);
+  background-color: #006094;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -168,7 +167,7 @@ table {
   margin: 0 15px;
   width: 33%;
   border-radius: 16px;
-  box-shadow: 0px 15px 23px -12px #00609449;
+  box-shadow: 0px 15px 23px -12px #003c5c;
 }
 @media (max-width: 500px) {
   .main-content.home-page .reasons .reason-to-use {
@@ -183,7 +182,7 @@ table {
 }
 .main-content.home-page .reasons .reason-to-use i {
   color: #3dfaff;
-  filter: drop-shadow(0px 0px 2px #00609477);
+  filter: drop-shadow(0px 0px 2px #000c13);
   font-size: 3.5rem;
 }
 .main-content.home-page .reasons .reason-to-use p {
@@ -194,14 +193,14 @@ table {
   text-align: center;
 }
 .acts-done.home-page {
-  background: #3dfaff;
-  background: linear-gradient(240deg, #3dfaff 0%, #48beff 100%);
+  background-color: whitesmoke;
 }
 .acts-done.home-page h3 {
   color: white;
   font-size: 1.75rem;
   text-align: center;
   margin: 55px;
+  color: #0081c7;
   margin: 0;
   padding: 50px;
 }
@@ -218,7 +217,7 @@ table {
   height: auto;
   margin: 25px;
   border-radius: 25px;
-  box-shadow: 0px 15px 33px -12px rgba(0, 0, 0, 0.685);
+  box-shadow: 0px 15px 33px -12px #696969;
 }
 .acts-done.home-page .acts-signup {
   display: flex;
@@ -235,13 +234,14 @@ table {
 }
 .acts-done.home-page .acts-signup button {
   border-radius: 15px;
-  border: 1.5px solid white;
+  border: none;
   outline: none;
   padding: 15px 35px;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: white;
   background-color: #48beff;
+  margin-top: 22px;
 }
 footer {
   background: #006094;

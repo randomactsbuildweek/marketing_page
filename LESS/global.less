@@ -6,7 +6,7 @@
 }
 
 .main-content.home-page {
-  .gradient-background-down();
+  background-color: darken(@picton-blue, 35%);
   .custom-flex(column, center);
 
   h3 {
@@ -29,7 +29,7 @@
       margin: 0 15px;
       width: 33%;
       border-radius: 16px;
-      box-shadow: 0px 15px 23px -12px #00609449;
+      box-shadow: 0px 15px 23px -12px #003c5c;
 
       @media @mobile {
         width: 80%;
@@ -44,7 +44,7 @@
 
       i {
         color: @electric-blue;
-        filter: drop-shadow(0px 0px 2px #00609477);
+        filter: drop-shadow(0px 0px 2px #000c13);
         font-size: 3.5rem;
       }
       p {
@@ -59,9 +59,10 @@
 }
 
 .acts-done.home-page {
-  .gradient-background-up();
+  background-color: whitesmoke;
   h3 {
     .section-header();
+    color: darken(@picton-blue, 25%);
     margin: 0;
     padding: 50px;
   }
@@ -76,7 +77,7 @@
       height: auto;
       margin: 25px;
       border-radius: 25px;
-      box-shadow: 0px 15px 33px -12px rgba(0, 0, 0, 0.685);
+      box-shadow: 0px 15px 33px -12px #696969;
     }
   }
 
@@ -94,6 +95,7 @@
 
     button {
       .basic-button();
+      margin-top: 22px;
     }
   }
 }
