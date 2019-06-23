@@ -167,6 +167,8 @@ table {
   align-items: center;
   margin: 0 15px;
   width: 33%;
+  border-radius: 16px;
+  box-shadow: 0px 15px 23px -12px #00609449;
 }
 @media (max-width: 500px) {
   .main-content.home-page .reasons .reason-to-use {
@@ -181,12 +183,14 @@ table {
 }
 .main-content.home-page .reasons .reason-to-use i {
   color: #3dfaff;
+  filter: drop-shadow(0px 0px 2px #00609477);
   font-size: 3.5rem;
 }
 .main-content.home-page .reasons .reason-to-use p {
   color: #ffffff;
   line-height: 1.75;
   margin: auto;
+  padding-bottom: 20px;
   text-align: center;
 }
 .acts-done.home-page {
@@ -206,13 +210,13 @@ table {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 80%;
+  width: 85%;
   margin: auto;
 }
 .acts-done.home-page .acts-images-holder img {
-  width: 30%;
+  width: 29%;
   height: auto;
-  margin: 10px;
+  margin: 25px;
   border-radius: 25px;
   box-shadow: 0px 15px 33px -12px rgba(0, 0, 0, 0.685);
 }
