@@ -201,19 +201,40 @@ table {
   margin: 0;
   padding: 50px;
 }
-.acts-done.home-page .acts-holder {
+.acts-done.home-page .acts-images-holder {
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   width: 80%;
   margin: auto;
-  padding-bottom: 150px;
 }
-.acts-done.home-page .acts-holder img {
+.acts-done.home-page .acts-images-holder img {
   width: 30%;
   height: auto;
   margin: 10px;
+}
+.acts-done.home-page .acts-signup {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 25px;
+}
+.acts-done.home-page .acts-signup h3 {
+  padding: 25px;
+}
+.acts-done.home-page .acts-signup button {
+  border-radius: 15px;
+  border: 1.5px solid white;
+  outline: none;
+  padding: 15px 35px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: #48beff;
 }
 footer {
   background: #006094;
