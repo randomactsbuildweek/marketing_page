@@ -1,0 +1,107 @@
+.container {
+  font-family: "Montserrat", sans-serif;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#nav {
+  .custom-flex();
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
+  width: 100%;
+  cursor: default;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .fas {
+    display: none;
+
+    @media @mobile {
+      display: flex;
+      font-size: 35px;
+      color: lightseagreen;
+      padding: 20px;
+    }
+  }
+  ul {
+    @media @mobile {
+      display: none;
+    }
+  }
+}
+
+#nav ul > li {
+  padding-right: 50px;
+  display: inline-block;
+  border: 0;
+  justify-content: center;
+}
+
+#nav a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: @hover-color;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+}
+
+.logo {
+  margin: auto;
+  @media @mobile {
+    margin: 0;
+  }
+}
+
+#attention {
+  background: #48beff;
+  background: -moz-linear-gradient(
+    -45deg,
+    #48beff 0%,
+    #48beff 29%,
+    #3dfaff 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    #48beff 0%,
+    #48beff 29%,
+    #3dfaff 100%
+  );
+  background: linear-gradient(135deg, #48beff 0%, #48beff 29%, #3dfaff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48beff', endColorstr='#3dfaff', GradientType=1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  color: darken(white, 10%);
+  font-size: 1.5rem;
+  @media @mobile {
+    align-content: center;
+  }
+}
+
+.top {
+  padding: 40px;
+  margin: auto;
+  text-align: center;
+}
+
+.image-featured {
+  margin: auto;
+  padding: 25px;
+  .custom-flex();
+  img {
+    @media @mobile {
+      width: 80%;
+      height: auto;
+      text-align: center;
+    }
+  }
+}
