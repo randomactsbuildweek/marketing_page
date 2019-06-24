@@ -4,26 +4,38 @@
   flex-direction: @direction;
 }
 
-.gradient-background() {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48beff+0,48beff+29,3dfaff+100 */
-  background: #48beff; /* Old browsers */
-  background: -moz-linear-gradient(
-    -45deg,
-    #48beff 0%,
-    #48beff 29%,
-    #3dfaff 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    -45deg,
-    #48beff 0%,
-    #48beff 29%,
-    #3dfaff 100%
-  ); /* Chrome10-25,Safari5.1-6 */
+.gradient-background-down() {
+  background: rgb(72, 190, 255);
   background: linear-gradient(
-    135deg,
-    #48beff 0%,
-    #48beff 29%,
-    #3dfaff 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48beff', endColorstr='#3dfaff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    140deg,
+    rgba(72, 190, 255, 1) 0%,
+    rgba(61, 250, 255, 1) 100%
+  );
+}
+
+.gradient-background-up() {
+  background: rgb(61, 250, 255);
+  background: linear-gradient(
+    240deg,
+    rgba(61, 250, 255, 1) 0%,
+    rgba(72, 190, 255, 1) 100%
+  );
+}
+
+.section-header() {
+  color: white;
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 55px;
+}
+
+.basic-button() {
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  padding: 15px 35px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: @picton-blue;
 }
