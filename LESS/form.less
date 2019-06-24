@@ -1,0 +1,65 @@
+.contact-us.contact-page {
+  .custom-flex();
+  background-color: darken(@electric-blue, 25%);
+
+  .contact-left {
+    .custom-flex();
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    margin: 106px auto 0px auto;
+    h3 {
+      .section-header();
+      font-size: 3.75rem;
+      margin: 35px auto 50px auto;
+    }
+    p {
+      text-align: left;
+      padding-bottom: 33px;
+      color: white;
+    }
+
+    button {
+      margin-bottom: 150px;
+      .basic-button();
+    }
+  }
+
+  .contact-right {
+    .custom-flex();
+    flex-direction: column;
+    background: white;
+    width: 35%;
+    margin: 92px auto;
+    border-radius: 10px;
+
+    h4 {
+      margin-left: 18px;
+      margin-top: 33px;
+    }
+
+    form {
+      .custom-flex();
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 35px;
+
+      input {
+        width: 44%;
+        margin: auto;
+      }
+      select {
+        width: 95%;
+        margin: 25px 0;
+      }
+      textarea {
+        width: 94%;
+      }
+
+      button {
+        .basic-button();
+        margin: 25px;
+      }
+    }
+  }
+}

@@ -276,3 +276,86 @@ footer .footer-content i {
   color: #00b8bd;
   padding: 20px 20px;
 }
+.contact-us.contact-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #00b8bd;
+}
+.contact-us.contact-page .contact-left {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  margin: 106px auto 0px auto;
+}
+.contact-us.contact-page .contact-left h3 {
+  color: white;
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 55px;
+  font-size: 3.75rem;
+  margin: 35px auto 50px auto;
+}
+.contact-us.contact-page .contact-left p {
+  text-align: left;
+  padding-bottom: 33px;
+  color: white;
+}
+.contact-us.contact-page .contact-left button {
+  margin-bottom: 150px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  padding: 15px 35px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: #48beff;
+}
+.contact-us.contact-page .contact-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-direction: column;
+  background: white;
+  width: 35%;
+  margin: 92px auto;
+  border-radius: 10px;
+}
+.contact-us.contact-page .contact-right h4 {
+  margin-left: 18px;
+  margin-top: 33px;
+}
+.contact-us.contact-page .contact-right form {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 35px;
+}
+.contact-us.contact-page .contact-right form input {
+  width: 44%;
+  margin: auto;
+}
+.contact-us.contact-page .contact-right form select {
+  width: 95%;
+  margin: 25px 0;
+}
+.contact-us.contact-page .contact-right form textarea {
+  width: 94%;
+}
+.contact-us.contact-page .contact-right form button {
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  padding: 15px 35px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: #48beff;
+  margin: 25px;
+}
