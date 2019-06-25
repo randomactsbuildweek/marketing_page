@@ -424,6 +424,7 @@ footer .footer-content i {
   width: 35%;
   margin: 92px auto;
   border-radius: 10px;
+  box-shadow: 0px 15px 33px -9px #003c5c;
 }
 .contact-us.contact-page .contact-right h4 {
   margin-left: 18px;
@@ -438,15 +439,35 @@ footer .footer-content i {
   margin-top: 35px;
 }
 .contact-us.contact-page .contact-right form input {
-  width: 44%;
+  width: 38%;
+  padding: 12px;
   margin: auto;
+  background: #e1f4ff;
+  border: none;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
 }
 .contact-us.contact-page .contact-right form select {
-  width: 95%;
+  width: 93%;
   margin: 25px 0;
+  padding: 12px;
+  background: #e1f4ff;
+  border: none;
+  border-radius: 5px;
 }
 .contact-us.contact-page .contact-right form textarea {
-  width: 94%;
+  width: 87%;
+  padding: 15px;
+  background: #e1f4ff;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+}
+.contact-us.contact-page .contact-right form :focus {
+  font-family: "Montserrat", sans-serif;
+}
+.contact-us.contact-page .contact-right form ::placeholder {
+  font-family: "Montserrat", sans-serif;
 }
 .contact-us.contact-page .contact-right form button {
   border-radius: 15px;
