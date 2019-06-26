@@ -478,6 +478,7 @@ footer .footer-content i {
   border: none;
   border-radius: 5px;
   font-family: "Montserrat", sans-serif;
+  color: gray;
 }
 .contact-us.contact-page .contact-right form textarea {
   width: 87%;
