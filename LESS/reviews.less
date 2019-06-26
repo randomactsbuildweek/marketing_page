@@ -1,0 +1,235 @@
+.container {
+  font-family: "Montserrat", sans-serif;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#nav {
+  .custom-flex();
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  font-size: 20px;
+  cursor: default;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .fas {
+    display: none;
+
+    @media @mobile {
+      display: flex;
+      font-size: 35px;
+      color: lightseagreen;
+      padding: 20px;
+    }
+  }
+  ul {
+    @media @mobile {
+      display: none;
+    }
+  }
+}
+
+#nav ul > li {
+  padding-right: 50px;
+  display: inline-block;
+  border: 0;
+  justify-content: center;
+}
+
+#nav a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: @hover-color;
+}
+
+button {
+  .basic-button();
+  font-size: 20px;
+}
+
+.logo {
+  margin: auto;
+  @media @mobile {
+    margin: 0;
+  }
+}
+.container {
+  .gradient-background-down();
+}
+// .sky-background {
+//   position: relative;
+//   text-align: center;
+//   color: white;
+/* Full height */
+//   height: 100%;
+//   width: 100%;
+
+//   /* Center and scale the image nicely */
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+.container {
+  background: linear-gradient(135deg, #48beff 0%, #48beff 29%, #3dfaff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48beff', endColorstr='#3dfaff', GradientType=1);
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  @media @mobile {
+    align-items: center;
+  }
+}
+
+// @media @mobile {
+//   font-size: 30px;
+//   padding: 20px;
+//   align-content: center;
+// }
+
+.main-content h1 {
+  padding: 20px;
+  font-size: 3rem;
+  margin-left: 25%;
+  align-items: center;
+  font-weight: bold;
+
+  @media @mobile {
+    align-content: center;
+  }
+}
+
+.main-content p {
+  padding: 10px;
+  margin-left: 25%;
+  font-size: 2rem;
+
+  @media @mobile {
+    align-content: center;
+  }
+}
+
+/* CSS talk bubble */
+.talk-bubble {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  height: auto;
+  color: black;
+  border: 20px solid;
+  border-color: gray;
+  background-color: yellow;
+}
+
+.talktext {
+  padding: 1em;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+.talktext p {
+  padding: 10px;
+}
+
+.customer-img {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  align-content: center;
+}
+
+.tri-right.border.btm-left-in:before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  right: auto;
+  top: auto;
+  bottom: -40px;
+  border: 20px solid;
+  border-color: #666 transparent transparent #666;
+}
+.tri-right.btm-left-in:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 38px;
+  right: auto;
+  top: auto;
+  bottom: -30px;
+  border: 12px solid;
+  border-color: #666 transparent transparent #666;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.bottom {
+  background-color: @picton-blue;
+}
+
+.bottom h2 {
+  padding: 50px;
+  font-size: 1.5rem;
+  margin-left: 10%;
+  font-weight: bold;
+}
+
+.row form {
+  margin-left: 50px;
+  border: 15px solid grey;
+  padding: 20px;
+  align-items: center;
+}
+
+form .post {
+  align-content: center;
+  background: #878787;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 4px;
+  box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
+  display: inline-block;
+  font-size: 20px;
+  letter-spacing: 2px;
+  //   padding: 0.25em 1em 0.25em 1em;
+  margin: 0 0 2.5em 0;
+}
+
+.icon {
+  position: relative;
+  text-decoration: none;
+}
+
+// .icon:before {
+//   -moz-osx-font-smoothing: grayscale;
+//   -webkit-font-smoothing: antialiased;
+//   font-family: FontAwesome;
+//   font-style: normal;
+//   font-weight: normal;
+//   text-transform: none !important;
+// }
+
+// .icon > .label {
+//   display: none;
+// }
