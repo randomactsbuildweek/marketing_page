@@ -383,82 +383,7 @@ footer .footer-content i {
   color: #00b8bd;
   padding: 20px 20px;
 }
-.container {
-  font-family: "Montserrat", sans-serif;
-  max-width: 1920px;
-  width: 100%;
-  margin: 0 auto;
-}
-#nav {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  font-family: "Montserrat", sans-serif;
-  width: 100%;
-  font-size: 20px;
-  cursor: default;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-}
-@media (max-width: 500px) {
-  #nav {
-    display: flex;
-    flex-direction: column;
-  }
-}
-#nav .fas {
-  display: none;
-}
-@media (max-width: 500px) {
-  #nav .fas {
-    display: flex;
-    font-size: 35px;
-    color: lightseagreen;
-    padding: 20px;
-  }
-}
-@media (max-width: 500px) {
-  #nav ul {
-    display: none;
-  }
-}
-#nav ul > li {
-  padding-right: 50px;
-  display: inline-block;
-  border: 0;
-  justify-content: center;
-}
-#nav a:hover {
-  text-decoration: none;
-  font-weight: bold;
-  color: red;
-}
-button {
-  border-radius: 15px;
-  border: none;
-  outline: none;
-  padding: 15px 35px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  color: white;
-  background-color: #48beff;
-  font-size: 20px;
-}
-.logo {
-  margin: auto;
-}
-@media (max-width: 500px) {
-  .logo {
-    margin: 0;
-  }
-}
-.container {
-  background: #48beff;
-  background: linear-gradient(140deg, #48beff 0%, #3dfaff 100%);
-}
-/* Full height */
-.container {
+.container-top {
   background: linear-gradient(135deg, #48beff 0%, #48beff 29%, #3dfaff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48beff', endColorstr='#3dfaff', GradientType=1);
   display: flex;
@@ -468,30 +393,35 @@ button {
   color: white;
 }
 @media (max-width: 500px) {
-  .container {
+  .container-top {
     align-items: center;
+    width: 100%;
   }
 }
 .main-content h1 {
   padding: 20px;
   font-size: 3rem;
-  margin-left: 25%;
+  margin-left: 20%;
   align-items: center;
-  font-weight: bold;
 }
 @media (max-width: 500px) {
   .main-content h1 {
-    align-content: center;
+    font-size: 40px;
+    padding: 15px;
+    margin-left: 10%;
   }
 }
 .main-content p {
   padding: 10px;
-  margin-left: 25%;
+  margin-left: 15%;
   font-size: 2rem;
 }
 @media (max-width: 500px) {
   .main-content p {
-    align-content: center;
+    font-size: 30px;
+    padding: 5px;
+    margin-left: 5%;
+    text-align: center;
   }
 }
 /* CSS talk bubble */
@@ -504,6 +434,16 @@ button {
   border: 20px solid;
   border-color: gray;
   background-color: yellow;
+}
+@media (max-width: 500px) {
+  .talk-bubble {
+    align-content: center;
+    width: 91.5%;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #48beff;
+    border: 10px solid gray;
+  }
 }
 .talktext {
   padding: 1em;
@@ -522,6 +462,14 @@ h4 {
   justify-content: center;
   align-content: center;
 }
+.customer-img img {
+  width: 250px;
+}
+@media (max-width: 500px) {
+  .customer-img img {
+    width: 350px;
+  }
+}
 .tri-right.border.btm-left-in:before {
   content: " ";
   position: absolute;
@@ -533,6 +481,11 @@ h4 {
   bottom: -40px;
   border: 20px solid;
   border-color: #666 transparent transparent #666;
+}
+@media (max-width: 500px) {
+  .tri-right.border.btm-left-in:before {
+    display: none;
+  }
 }
 .tri-right.btm-left-in:after {
   content: " ";
@@ -546,6 +499,11 @@ h4 {
   border: 12px solid;
   border-color: #666 transparent transparent #666;
 }
+@media (max-width: 500px) {
+  .tri-right.btm-left-in:after {
+    display: none;
+  }
+}
 .reviews-container {
   display: flex;
   justify-content: space-around;
@@ -553,35 +511,222 @@ h4 {
   margin-bottom: 40px;
   margin-top: 50px;
 }
-.bottom {
+@media (max-width: 500px) {
+  .reviews-container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.contact-right {
   background-color: #48beff;
 }
-.bottom h2 {
+.contact-right h2 {
   padding: 50px;
   font-size: 1.5rem;
   margin-left: 10%;
   font-weight: bold;
 }
-.row form {
-  margin-left: 50px;
-  border: 15px solid grey;
-  padding: 20px;
-  align-items: center;
+@media (max-width: 500px) {
+  .contact-right h2 {
+    text-align: center;
+  }
 }
-form .post {
+.contact-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-direction: column;
+  color: black;
+  width: 35%;
+  margin: 92px auto;
   align-content: center;
-  background: #878787;
-  color: #fff;
-  font-weight: 400;
-  text-transform: uppercase;
-  border-radius: 4px;
-  box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
-  display: inline-block;
-  font-size: 20px;
-  letter-spacing: 2px;
-  margin: 0 0 2.5em 0;
+  border-radius: 10px;
+  box-shadow: 0px 15px 33px -9px #003c5c;
 }
-.icon {
-  position: relative;
-  text-decoration: none;
+@media (max-width: 500px) {
+  .contact-right {
+    width: 100%;
+  }
+}
+.contact-right form {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 15px 33px -9px #003c5c;
+}
+.contact-right form input {
+  width: 38%;
+  padding: 20px;
+  margin: auto;
+  background: #e1f4ff;
+  border: none;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+.contact-right h4 {
+  padding: 10px;
+  margin-left: 75px;
+}
+.contact-right p {
+  margin-left: 125px;
+}
+.contact-right textarea {
+  width: 87%;
+  padding: 25px;
+  margin-top: 15px;
+  background: #e1f4ff;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+}
+.contact-right :focus {
+  font-family: "Montserrat", sans-serif;
+}
+.contact-right ::placeholder {
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+}
+.contact-right .submit {
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  padding: 15px 35px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: #48beff;
+  margin: 25px;
+}
+.contact-us.contact-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #00b8bd;
+}
+@media (max-width: 500px) {
+  .contact-us.contact-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.contact-us.contact-page .contact-left {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  margin: 106px auto 0px auto;
+}
+@media (max-width: 500px) {
+  .contact-us.contact-page .contact-left {
+    width: 80%;
+    margin-top: 50px;
+  }
+}
+.contact-us.contact-page .contact-left h3 {
+  color: white;
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 55px;
+  font-size: 3rem;
+  margin: 35px auto 50px auto;
+}
+.contact-us.contact-page .contact-left p {
+  text-align: center;
+  padding-bottom: 50px;
+  color: white;
+}
+.contact-us.contact-page .contact-left button {
+  margin-bottom: 150px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  padding: 15px 35px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: #48beff;
+}
+@media (max-width: 500px) {
+  .contact-us.contact-page .contact-left button {
+    margin-bottom: 0;
+  }
+}
+.contact-us.contact-page .contact-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-direction: column;
+  background: white;
+  width: 35%;
+  margin: 92px auto;
+  border-radius: 10px;
+  box-shadow: 0px 15px 33px -9px #003c5c;
+}
+@media (max-width: 500px) {
+  .contact-us.contact-page .contact-right {
+    width: 80%;
+  }
+}
+.contact-us.contact-page .contact-right h4 {
+  margin-left: 18px;
+  margin-top: 33px;
+}
+.contact-us.contact-page .contact-right form {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 35px;
+}
+.contact-us.contact-page .contact-right form input {
+  width: 38%;
+  padding: 12px;
+  margin: auto;
+  background: #e1f4ff;
+  border: none;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+.contact-us.contact-page .contact-right form select {
+  width: 93%;
+  margin: 25px 0;
+  padding: 12px;
+  background: #e1f4ff;
+  border: none;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  color: gray;
+}
+.contact-us.contact-page .contact-right form textarea {
+  width: 87%;
+  padding: 15px;
+  background: #e1f4ff;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+}
+.contact-us.contact-page .contact-right form :focus {
+  font-family: "Montserrat", sans-serif;
+}
+.contact-us.contact-page .contact-right form ::placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+.contact-us.contact-page .contact-right form button {
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  padding: 15px 35px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: #48beff;
+  margin: 25px;
 }
