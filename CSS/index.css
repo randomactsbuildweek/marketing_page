@@ -261,13 +261,10 @@ table {
 }
 #nav {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
   font-family: "Montserrat", sans-serif;
   width: 100%;
   font-size: 25px;
   cursor: default;
-  justify-content: space-between;
   align-items: center;
   background-color: white;
 }
@@ -286,11 +283,29 @@ table {
     font-size: 35px;
     color: lightseagreen;
     padding: 20px;
+    cursor: pointer;
   }
 }
 @media (max-width: 500px) {
-  #nav ul {
+  #nav .toggle-content {
     display: none;
+  }
+}
+#nav ul {
+  width: 80%;
+  font-size: 20px;
+}
+#nav .menu-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  #nav .menu-items {
+    flex-direction: column;
+    font-size: 30px;
+    margin: 20px;
   }
 }
 #nav ul > li {
@@ -314,9 +329,6 @@ button {
   color: white;
   background-color: #48beff;
   font-size: 20px;
-}
-.logo {
-  margin: auto;
 }
 @media (max-width: 500px) {
   .logo {

@@ -6,12 +6,13 @@
 }
 
 #nav {
-  .custom-flex();
+  // .custom-flex();
+  display: flex;
   font-family: "Montserrat", sans-serif;
   width: 100%;
   font-size: 25px;
   cursor: default;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
   background-color: white;
   @media @mobile {
@@ -26,11 +27,31 @@
       font-size: 35px;
       color: lightseagreen;
       padding: 20px;
+      cursor: pointer;
     }
   }
-  ul {
+
+  .toggle-content {
     @media @mobile {
       display: none;
+    }
+  }
+
+  ul {
+    width: 80%;
+    font-size: 20px;
+  }
+
+  .menu-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @media @mobile {
+      flex-direction: column;
+      font-size: 30px;
+      margin: 20px;
     }
   }
 }
@@ -54,7 +75,7 @@ button {
 }
 
 .logo {
-  margin: auto;
+  // margin: auto;
   @media @mobile {
     margin: 0;
   }
