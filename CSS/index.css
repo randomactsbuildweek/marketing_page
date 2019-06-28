@@ -505,3 +505,95 @@ footer .footer-content i {
   background-color: #48beff;
   margin: 25px;
 }
+.about-us {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: whitesmoke;
+  flex-wrap: wrap;
+}
+.about-us .meet-the-team {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  width: 50%;
+}
+@media (max-width: 800px) {
+  .about-us .meet-the-team {
+    width: 67%;
+  }
+}
+@media (max-width: 500px) {
+  .about-us .meet-the-team {
+    width: 80%;
+  }
+}
+.about-us .meet-the-team h3 {
+  font-size: 2rem;
+  margin-bottom: 35px;
+}
+.about-us .meet-the-team p {
+  text-align: center;
+}
+.about-us .member-cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+@media (max-width: 800px) {
+  .about-us .member-cards {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+.about-us .member-cards .member {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border: 2px solid #48beff;
+  border-radius: 15px;
+  width: 42%;
+  align-items: center;
+  box-shadow: 0px 23px 40px -30px #003c5c;
+}
+@media (max-width: 800px) {
+  .about-us .member-cards .member {
+    width: 93%;
+    margin-bottom: 50px;
+  }
+}
+.about-us .member-cards .member img {
+  width: 150px;
+  height: 150px;
+  padding: 15px;
+  border-radius: 50%;
+}
+.about-us .member-cards .member .right-section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 65%;
+  margin: 0 auto;
+  padding: 15px;
+}
+.about-us .member-cards .member .right-section .about-member {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.about-us .member-cards .member .right-section .about-member h4 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+.about-us .member-cards .member .right-section .about-member p,
+.about-us .member-cards .member .right-section .about-member h5 {
+  margin-bottom: 25px;
+}
+.about-us .member-cards .member .right-section .member-links {
+  font-size: 3rem;
+}
