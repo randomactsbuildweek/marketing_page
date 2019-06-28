@@ -319,6 +319,7 @@ footer .footer-content i {
   border: 20px solid;
   border-color: gray;
   background-color: yellow;
+  margin-left: 40%;
 }
 @media (max-width: 500px) {
   .talk-bubble {

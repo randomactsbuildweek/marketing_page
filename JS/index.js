@@ -1,16 +1,16 @@
-let NavBar = document.querySelector(`.button`);
+var NavBar = document.querySelector(`.button`);
 NavBar.addEventListener(`click`, event => {
   alert("Please fill out the form in the contacts tab!");
 });
 
-let hamburger = document.querySelector(`.fas`);
+var hamburger = document.querySelector(`.fas`);
 hamburger.addEventListener("click", event => {
   toggle();
 });
 
-let content = document.querySelector(`ul`);
+var content = document.querySelector(`ul`);
 
-let toggle = () => {
+var toggle = () => {
   content.classList.toggle(`toggle-content`);
 };
 
