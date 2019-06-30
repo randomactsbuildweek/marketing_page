@@ -194,7 +194,7 @@ table {
 }
 button {
   border-radius: 15px;
-  border: none;
+  border: rgba(255, 255, 255, 0) 2px solid;
   outline: none;
   padding: 15px 35px;
   font-family: "Montserrat", sans-serif;
@@ -202,6 +202,12 @@ button {
   color: white;
   background-color: #48beff;
   font-size: 20px;
+}
+button:hover {
+  background-color: white;
+  border: #48beff 2px solid;
+  border-radius: 5px;
+  color: #48beff;
 }
 @media (max-width: 500px) {
   .logo {
@@ -476,7 +482,7 @@ h4 {
 }
 .contact-right .submit {
   border-radius: 15px;
-  border: none;
+  border: rgba(255, 255, 255, 0) 2px solid;
   outline: none;
   padding: 15px 35px;
   font-family: "Montserrat", sans-serif;
@@ -484,6 +490,12 @@ h4 {
   color: white;
   background-color: #48beff;
   margin: 25px;
+}
+.contact-right .submit:hover {
+  background-color: white;
+  border: #48beff 2px solid;
+  border-radius: 5px;
+  color: #48beff;
 }
 .contact-us.contact-page {
   display: flex;
@@ -529,13 +541,19 @@ h4 {
 .contact-us.contact-page .contact-left button {
   margin-bottom: 150px;
   border-radius: 15px;
-  border: none;
+  border: rgba(255, 255, 255, 0) 2px solid;
   outline: none;
   padding: 15px 35px;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: white;
   background-color: #48beff;
+}
+.contact-us.contact-page .contact-left button:hover {
+  background-color: white;
+  border: #48beff 2px solid;
+  border-radius: 5px;
+  color: #48beff;
 }
 @media (max-width: 500px) {
   .contact-us.contact-page .contact-left button {
@@ -607,7 +625,7 @@ h4 {
 }
 .contact-us.contact-page .contact-right form button {
   border-radius: 15px;
-  border: none;
+  border: rgba(255, 255, 255, 0) 2px solid;
   outline: none;
   padding: 15px 35px;
   font-family: "Montserrat", sans-serif;
@@ -615,6 +633,12 @@ h4 {
   color: white;
   background-color: #48beff;
   margin: 25px;
+}
+.contact-us.contact-page .contact-right form button:hover {
+  background-color: white;
+  border: #48beff 2px solid;
+  border-radius: 5px;
+  color: #48beff;
 }
 .about-us {
   display: flex;
@@ -842,7 +866,7 @@ h4 {
 }
 .acts-done.home-page .acts-signup button {
   border-radius: 15px;
-  border: none;
+  border: rgba(255, 255, 255, 0) 2px solid;
   outline: none;
   padding: 15px 35px;
   font-family: "Montserrat", sans-serif;
@@ -850,4 +874,10 @@ h4 {
   color: white;
   background-color: #48beff;
   margin-top: 22px;
+}
+.acts-done.home-page .acts-signup button:hover {
+  background-color: white;
+  border: #48beff 2px solid;
+  border-radius: 5px;
+  color: #48beff;
 }
