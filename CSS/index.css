@@ -203,11 +203,10 @@ table {
 }
 #nav .menu-items {
   display: flex;
+  padding: 25px;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-left: 7%;
-  cursor: pointer;
 }
 @media (max-width: 500px) {
   #nav .menu-items {
@@ -252,6 +251,9 @@ button {
   background-color: #48beff;
   font-size: 20px;
 }
+.hard-hover-shadow {
+  box-shadow: 0px 15px 23px -12px #003c5c;
+
 button:hover {
   background-color: white;
   border: #48beff 2px solid;
@@ -272,6 +274,9 @@ button:hover {
     margin: auto;
     padding: 10px;
   }
+}
+.logo:hover {
+  transform: scale(1.1);
 }
 #attention {
   background: #48beff;
@@ -353,11 +358,11 @@ footer .footer-content i {
   }
 }
 .main-content h1 {
-  padding: 20px;
-  font-size: 3rem;
-  margin-left: 32%;
-  align-items: center;
-  font-weight: bold;
+  color: white;
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 55px;
+  font-size: 50px;
 }
 @media (max-width: 500px) {
   .main-content h1 {
@@ -372,21 +377,15 @@ footer .footer-content i {
     font-size: 1.75rem;
     text-align: center;
     margin: 55px;
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 .main-content p {
-  padding-bottom: 90px;
-  margin-left: 25%;
-  font-size: 2rem;
-}
-@media (max-width: 500px) {
-  .main-content p {
-    font-size: 30px;
-    margin: auto;
-    text-align: center;
-    padding-bottom: 20px;
-  }
+  color: white;
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 55px;
+  font-size: 25px;
 }
 @media (max-width: 800px) {
   .main-content p {
@@ -394,6 +393,7 @@ footer .footer-content i {
     font-size: 1.75rem;
     text-align: center;
     margin: 55px;
+    font-size: 20px;
   }
 }
 /* CSS talk bubble */
@@ -401,19 +401,18 @@ footer .footer-content i {
   display: inline-block;
   align-content: center;
   position: relative;
-  width: 25%;
+  width: 35%;
   height: auto;
   color: black;
-  border: 20px solid;
-  border-color: gray;
+  border: 10px solid !important;
+  border-color: gray !important;
   background-color: yellow;
+  margin-left: 35%;
 }
 @media (max-width: 500px) {
   .talk-bubble {
     width: 91.5%;
     margin: 5%;
-    border: 10px solid gray;
-    background-color: yellow;
   }
 }
 @media (max-width: 800px) {
@@ -423,7 +422,7 @@ footer .footer-content i {
   }
 }
 .carousel-item {
-  padding-top: 70px;
+  padding: 70px 0;
 }
 @media (max-width: 500px) {
   .carousel-item {
@@ -453,7 +452,7 @@ h4 {
   align-content: center;
 }
 .customer-img img {
-  width: 250px;
+  width: 275px;
 }
 @media (max-width: 500px) {
   .customer-img img {
@@ -494,30 +493,15 @@ h4 {
     display: none;
   }
 }
-.reviews-container {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-bottom: 40px;
-  margin-top: 50px;
-}
-@media (max-width: 500px) {
-  .reviews-container {
-    flex-direction: column;
-    width: 100%;
-  }
-}
-.contact-right {
-  background-color: #48beff;
-}
 .contact-right {
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-direction: column;
+  background-color: #48beff;
   color: black;
-  width: 35%;
   margin: 92px auto;
+  padding: 10px;
   align-content: center;
   border-radius: 10px;
   box-shadow: 0px 15px 33px -9px #003c5c;
@@ -534,9 +518,14 @@ h4 {
   flex-wrap: wrap;
   width: 100%;
   margin-top: 20px;
+  padding: 35px;
+  padding-bottom: 10px;
   border-radius: 10px;
   box-shadow: 0px 15px 33px -9px #003c5c;
 }
+.contact-right form input {
+  padding-bottom: 20px;
+  margin: 10px;
 .contact-right .review-form .review-input {
   width: 38%;
   padding: 20px;
@@ -547,8 +536,13 @@ h4 {
   font-family: "Montserrat", sans-serif;
 }
 .contact-right h4 {
-  padding: 10px;
-  margin-left: 75px;
+  text-align: center;
+  font-size: 25px;
+}
+@media (max-width: 500px) {
+  .contact-right h4 {
+    text-align: center;
+  }
 }
 @media (max-width: 800px) {
   .contact-right h4 {
@@ -556,11 +550,17 @@ h4 {
   }
 }
 .contact-right p {
-  margin-left: 125px;
+  text-align: center;
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  .contact-right p {
+    text-align: center;
+  }
 }
 @media (max-width: 800px) {
   .contact-right p {
-    padding-left: 21%;
+    text-align: center;
   }
 }
 .contact-right .review-textarea {

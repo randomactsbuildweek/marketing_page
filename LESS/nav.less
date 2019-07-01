@@ -68,11 +68,10 @@
 
   .menu-items {
     display: flex;
+    padding: 25px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-left: 7%;
-    cursor: pointer;
 
     @media @mobile {
       background-color: lightblue;
@@ -114,6 +113,10 @@ button {
   font-size: 20px;
 }
 
+.hard-hover-shadow {
+  box-shadow: 0px 15px 23px -12px @dark-blue-shadow;
+}
+
 .logo {
   margin: 15px;
   @media @mobile {
@@ -124,6 +127,10 @@ button {
     display: flex;
     margin: auto;
     padding: 10px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
   }
 }
 
