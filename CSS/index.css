@@ -521,18 +521,20 @@ h4 {
 @media (max-width: 800px) {
   .contact-right h4 {
     text-align: center;
+    padding: 20px;
   }
 }
-.contact-right p {
-  text-align: center;
-  padding: 20px;
-}
-@media (max-width: 800px) {
-  .contact-right p {
+@media (max-width: 800px) and (max-width: 500px) {
+  .contact-right h4 {
     text-align: center;
   }
 }
-.contact-right .review-form {
+@media (max-width: 800px) and (max-width: 800px) {
+  .contact-right h4 {
+    text-align: center;
+  }
+}
+.contact-right h4 .review-form {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -544,11 +546,11 @@ h4 {
   border-radius: 10px;
   box-shadow: 0px 15px 33px -9px #003c5c;
 }
-.contact-right .review-form input {
+.contact-right h4 .review-form input {
   padding-bottom: 20px;
   margin: 10px;
 }
-.contact-right .review-form input .review-input {
+.contact-right h4 .review-form input .review-input {
   width: 38%;
   padding: 20px;
   margin: auto;
@@ -557,7 +559,7 @@ h4 {
   border-radius: 5px;
   font-family: "Montserrat", sans-serif;
 }
-.contact-right .review-form .review-textarea {
+.contact-right h4 .review-form .review-textarea {
   width: 87%;
   padding: 25px;
   margin-top: 15px;
@@ -566,13 +568,13 @@ h4 {
   border-radius: 5px;
   resize: none;
 }
-.contact-right .review-form :focus {
+.contact-right h4 .review-form :focus {
   font-family: "Montserrat", sans-serif;
 }
-.contact-right .review-form ::placeholder {
+.contact-right h4 .review-form ::placeholder {
   font-family: "Montserrat", sans-serif;
 }
-.contact-right .review-form .submit {
+.contact-right h4 .review-form .submit {
   border-radius: 15px;
   border: rgba(255, 255, 255, 0) 2px solid;
   outline: none;
@@ -583,14 +585,14 @@ h4 {
   background-color: #48beff;
   margin: 25px;
 }
-.contact-right .review-form .submit:hover {
+.contact-right h4 .review-form .submit:hover {
   background-color: white;
   border: #48beff 2px solid;
   border-radius: 5px;
   color: #48beff;
 }
 @media (max-width: 800px) {
-  .contact-right .review-form .submit {
+  .contact-right h4 .review-form .submit {
     cursor: pointer;
   }
 }
