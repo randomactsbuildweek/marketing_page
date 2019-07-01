@@ -162,11 +162,7 @@ h4 {
     width: 100%;
   }
 
-  @media @tablet {
-    width: 90%;
-  }
-
-  form {
+  .review-form {
     .custom-flex();
     flex-wrap: wrap;
     width: 100%;
@@ -179,6 +175,10 @@ h4 {
       padding-bottom: 20px;
       margin: 10px;
 
+    .review-input {
+      width: 38%;
+      padding: 20px;
+      margin: auto;
       .form-item-styling();
       font-family: "Montserrat", sans-serif;
     }
@@ -210,7 +210,7 @@ h4 {
     }
   }
 
-  textarea {
+  .review-textarea {
     width: 87%;
     padding: 25px;
     margin-top: 15px;
@@ -223,7 +223,6 @@ h4 {
   }
   ::placeholder {
     font-family: "Montserrat", sans-serif;
-    padding: 20px;
   }
   .submit {
     .basic-button();

@@ -37,11 +37,18 @@
 
 .basic-button() {
   border-radius: 15px;
-  border: none;
+  border: rgba(255, 255, 255, 0) 2px solid;
   outline: none;
   padding: 15px 35px;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: white;
   background-color: @picton-blue;
+
+  &:hover {
+    background-color: white;
+    border: @picton-blue 2px solid;
+    border-radius: 5px;
+    color: @picton-blue;
+  }
 }

@@ -242,7 +242,7 @@ table {
 }
 button {
   border-radius: 15px;
-  border: none;
+  border: rgba(255, 255, 255, 0) 2px solid;
   outline: none;
   padding: 15px 35px;
   font-family: "Montserrat", sans-serif;
@@ -253,6 +253,12 @@ button {
 }
 .hard-hover-shadow {
   box-shadow: 0px 15px 23px -12px #003c5c;
+
+button:hover {
+  background-color: white;
+  border: #48beff 2px solid;
+  border-radius: 5px;
+  color: #48beff;
 }
 .logo {
   margin: 15px;
@@ -505,12 +511,7 @@ h4 {
     width: 100%;
   }
 }
-@media (max-width: 800px) {
-  .contact-right {
-    width: 90%;
-  }
-}
-.contact-right form {
+.contact-right .review-form {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -525,6 +526,10 @@ h4 {
 .contact-right form input {
   padding-bottom: 20px;
   margin: 10px;
+.contact-right .review-form .review-input {
+  width: 38%;
+  padding: 20px;
+  margin: auto;
   background: #e1f4ff;
   border: none;
   border-radius: 5px;
@@ -558,7 +563,7 @@ h4 {
     text-align: center;
   }
 }
-.contact-right textarea {
+.contact-right .review-textarea {
   width: 87%;
   padding: 25px;
   margin-top: 15px;
@@ -572,11 +577,10 @@ h4 {
 }
 .contact-right ::placeholder {
   font-family: "Montserrat", sans-serif;
-  padding: 20px;
 }
 .contact-right .submit {
   border-radius: 15px;
-  border: none;
+  border: rgba(255, 255, 255, 0) 2px solid;
   outline: none;
   padding: 15px 35px;
   font-family: "Montserrat", sans-serif;
@@ -584,6 +588,12 @@ h4 {
   color: white;
   background-color: #48beff;
   margin: 25px;
+}
+.contact-right .submit:hover {
+  background-color: white;
+  border: #48beff 2px solid;
+  border-radius: 5px;
+  color: #48beff;
 }
 @media (max-width: 800px) {
   .contact-right .submit {
@@ -596,7 +606,7 @@ h4 {
   flex-direction: row;
   background-color: #00b8bd;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .contact-us.contact-page {
     display: flex;
     justify-content: center;
@@ -612,7 +622,7 @@ h4 {
   width: 35%;
   margin: 106px auto 0px auto;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .contact-us.contact-page .contact-left {
     width: 80%;
     margin-top: 50px;
@@ -634,7 +644,7 @@ h4 {
 .contact-us.contact-page .contact-left button {
   margin-bottom: 150px;
   border-radius: 15px;
-  border: none;
+  border: rgba(255, 255, 255, 0) 2px solid;
   outline: none;
   padding: 15px 35px;
   font-family: "Montserrat", sans-serif;
@@ -642,7 +652,13 @@ h4 {
   color: white;
   background-color: #48beff;
 }
-@media (max-width: 500px) {
+.contact-us.contact-page .contact-left button:hover {
+  background-color: white;
+  border: #48beff 2px solid;
+  border-radius: 5px;
+  color: #48beff;
+}
+@media (max-width: 800px) {
   .contact-us.contact-page .contact-left button {
     margin-bottom: 0;
   }
@@ -658,7 +674,7 @@ h4 {
   border-radius: 10px;
   box-shadow: 0px 15px 33px -9px #003c5c;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .contact-us.contact-page .contact-right {
     width: 80%;
   }
@@ -697,6 +713,7 @@ h4 {
 .contact-us.contact-page .contact-right form textarea {
   width: 87%;
   padding: 15px;
+  margin: 0;
   background: #e1f4ff;
   border: none;
   border-radius: 5px;
@@ -707,10 +724,11 @@ h4 {
 }
 .contact-us.contact-page .contact-right form ::placeholder {
   font-family: "Montserrat", sans-serif;
+  padding: 0px;
 }
 .contact-us.contact-page .contact-right form button {
   border-radius: 15px;
-  border: none;
+  border: rgba(255, 255, 255, 0) 2px solid;
   outline: none;
   padding: 15px 35px;
   font-family: "Montserrat", sans-serif;
@@ -718,6 +736,12 @@ h4 {
   color: white;
   background-color: #48beff;
   margin: 25px;
+}
+.contact-us.contact-page .contact-right form button:hover {
+  background-color: white;
+  border: #48beff 2px solid;
+  border-radius: 5px;
+  color: #48beff;
 }
 .about-us {
   display: flex;
@@ -734,6 +758,8 @@ h4 {
   align-items: center;
   margin: 50px auto;
   width: 50%;
+  color: #0081c7;
+  font-family: "Montserrat", sans-serif;
 }
 @media (max-width: 800px) {
   .about-us .meet-the-team {
@@ -769,11 +795,11 @@ h4 {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  border: 2px solid #48beff;
+  border: 2px solid #0081c7;
   border-radius: 15px;
   width: 42%;
   align-items: center;
-  box-shadow: 0px 23px 40px -30px #003c5c;
+  background: whitesmoke;
 }
 @media (max-width: 800px) {
   .about-us .member-cards .member {
@@ -799,6 +825,8 @@ h4 {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  color: #0081c7;
+  font-family: "Montserrat", sans-serif;
 }
 .about-us .member-cards .member .right-section .about-member h4 {
   margin-bottom: 15px;
@@ -807,6 +835,9 @@ h4 {
 .about-us .member-cards .member .right-section .about-member p,
 .about-us .member-cards .member .right-section .about-member h5 {
   margin-bottom: 25px;
+}
+.about-us .member-cards .member .right-section a {
+  color: #00b8bd;
 }
 .about-us .member-cards .member .right-section .member-links {
   font-size: 3rem;
@@ -917,7 +948,7 @@ h4 {
   margin: 25px;
   border-radius: 25px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .acts-done.home-page .acts-images-holder img {
     width: 100%;
   }
@@ -925,7 +956,7 @@ h4 {
 .acts-done.home-page .acts-images-holder img:hover {
   transform: scale(1.35);
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .acts-done.home-page .acts-images-holder img:nth-last-child(-n + 2) {
     display: none;
   }
@@ -945,7 +976,7 @@ h4 {
 }
 .acts-done.home-page .acts-signup button {
   border-radius: 15px;
-  border: none;
+  border: rgba(255, 255, 255, 0) 2px solid;
   outline: none;
   padding: 15px 35px;
   font-family: "Montserrat", sans-serif;
@@ -953,4 +984,10 @@ h4 {
   color: white;
   background-color: #48beff;
   margin-top: 22px;
+}
+.acts-done.home-page .acts-signup button:hover {
+  background-color: white;
+  border: #48beff 2px solid;
+  border-radius: 5px;
+  color: #48beff;
 }
