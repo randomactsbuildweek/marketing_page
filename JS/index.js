@@ -1,17 +1,17 @@
-let NavBar = document.querySelector(`.button`);
+//1 EventListener
+var NavBar = document.querySelector(`.button`);
 NavBar.addEventListener(`click`, event => {
-  alert("Please fill out the form in the contacts tab!");
+  alert("Please fill out the form in the 'Contact Us' tab!");
 });
 
-let hamburger = document.querySelector(`.fas`);
+//2 DOM Manipulation
+var hamburger = document.querySelector(`.fas`);
 hamburger.addEventListener("click", event => {
   toggle();
 });
 
-let content = document.querySelector(`ul`);
+var content = document.querySelector(`ul`);
 
-let toggle = () => {
+var toggle = () => {
   content.classList.toggle(`toggle-content`);
 };
-
-
