@@ -1,7 +1,12 @@
+.container {
+  padding: 0;
+}
+
 .container-top {
   background: linear-gradient(135deg, #48beff 0%, #48beff 29%, #3dfaff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48beff', endColorstr='#3dfaff', GradientType=1);
   display: flex;
+  width: 100%;
   align-content: center;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
@@ -15,34 +20,42 @@
 .main-content h1 {
   padding: 20px;
   font-size: 3rem;
-  margin-left: 20%;
+  margin-left: 32%;
   align-items: center;
-  // font-weight: bold;
+  font-weight: bold;
 
   @media @mobile {
     font-size: 40px;
     padding: 15px;
     margin-left: 10%;
-    // align-content: center;
+  }
+
+  @media @tablet {
+    .section-header();
+    font-size: 50px;
   }
 }
 
 .main-content p {
-  padding: 10px;
-  margin-left: 15%;
+  padding-bottom: 90px;
+  margin-left: 25%;
   font-size: 2rem;
 
   @media @mobile {
     font-size: 30px;
-    padding: 5px;
-    margin-left: 5%;
+    margin: auto;
     text-align: center;
+    padding-bottom: 20px;
+  }
+  @media @tablet {
+    .section-header();
   }
 }
 
 /* CSS talk bubble */
 .talk-bubble {
   display: inline-block;
+  align-content: center;
   position: relative;
   width: 25%;
   height: auto;
@@ -50,15 +63,29 @@
   border: 20px solid;
   border-color: gray;
   background-color: yellow;
-  margin-left: 40%;
 
   @media @mobile {
-    align-content: center;
     width: 91.5%;
-    margin-right: 20px;
-    padding: 10px;
-    background-color: @picton-blue;
+    margin: 5%;
     border: 10px solid gray;
+    background-color: yellow;
+  }
+
+  @media @tablet {
+    width: 91.5%;
+    margin: 5%;
+  }
+}
+
+.carousel-item {
+  padding-top: 70px;
+
+  @media @mobile {
+    padding: 30px;
+  }
+
+  @media @tablet {
+    padding-top: 10px;
   }
 }
 
@@ -140,17 +167,6 @@ h4 {
   background-color: @picton-blue;
 }
 
-.contact-right h2 {
-  padding: 50px;
-  font-size: 1.5rem;
-  margin-left: 10%;
-  font-weight: bold;
-
-  @media @mobile {
-    text-align: center;
-  }
-}
-
 .contact-right {
   .custom-flex();
   flex-direction: column;
@@ -163,6 +179,10 @@ h4 {
 
   @media @mobile {
     width: 100%;
+  }
+
+  @media @tablet {
+    width: 90%;
   }
 
   form {
@@ -178,17 +198,24 @@ h4 {
       margin: auto;
       .form-item-styling();
       font-family: "Montserrat", sans-serif;
-      // color: gray;
     }
   }
+
   h4 {
     padding: 10px;
     margin-left: 75px;
-    // justify-content: center;
+
+    @media @tablet {
+      text-align: center;
+    }
   }
 
   p {
     margin-left: 125px;
+
+    @media @tablet {
+      padding-left: 21%;
+    }
   }
 
   textarea {
@@ -209,5 +236,9 @@ h4 {
   .submit {
     .basic-button();
     margin: 25px;
+
+    @media @tablet {
+      cursor: pointer;
+    }
   }
 }
