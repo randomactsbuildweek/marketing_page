@@ -951,6 +951,11 @@ h4 {
   transform: scale(1.35);
 }
 @media (max-width: 800px) {
+  .acts-done.home-page .acts-images-holder img:hover {
+    transform: none;
+  }
+}
+@media (max-width: 800px) {
   .acts-done.home-page .acts-images-holder img:nth-last-child(-n + 2) {
     display: none;
   }
