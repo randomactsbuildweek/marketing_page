@@ -251,14 +251,14 @@ button {
   background-color: #48beff;
   font-size: 20px;
 }
-.hard-hover-shadow {
-  box-shadow: 0px 15px 23px -12px #003c5c;
-
 button:hover {
   background-color: white;
   border: #48beff 2px solid;
   border-radius: 5px;
   color: #48beff;
+}
+.hard-hover-shadow {
+  box-shadow: 0px 15px 23px -12px #003c5c;
 }
 .logo {
   margin: 15px;
@@ -523,10 +523,11 @@ h4 {
   border-radius: 10px;
   box-shadow: 0px 15px 33px -9px #003c5c;
 }
-.contact-right form input {
+.contact-right .review-form input {
   padding-bottom: 20px;
   margin: 10px;
-.contact-right .review-form .review-input {
+}
+.contact-right .review-form input .review-input {
   width: 38%;
   padding: 20px;
   margin: auto;
@@ -535,35 +536,35 @@ h4 {
   border-radius: 5px;
   font-family: "Montserrat", sans-serif;
 }
-.contact-right h4 {
+.contact-right .review-form h4 {
   text-align: center;
   font-size: 25px;
 }
 @media (max-width: 500px) {
-  .contact-right h4 {
+  .contact-right .review-form h4 {
     text-align: center;
   }
 }
 @media (max-width: 800px) {
-  .contact-right h4 {
+  .contact-right .review-form h4 {
     text-align: center;
   }
 }
-.contact-right p {
+.contact-right .review-form p {
   text-align: center;
   padding: 20px;
 }
 @media (max-width: 500px) {
-  .contact-right p {
+  .contact-right .review-form p {
     text-align: center;
   }
 }
 @media (max-width: 800px) {
-  .contact-right p {
+  .contact-right .review-form p {
     text-align: center;
   }
 }
-.contact-right .review-textarea {
+.contact-right .review-form .review-textarea {
   width: 87%;
   padding: 25px;
   margin-top: 15px;
@@ -572,13 +573,13 @@ h4 {
   border-radius: 5px;
   resize: none;
 }
-.contact-right :focus {
+.contact-right .review-form :focus {
   font-family: "Montserrat", sans-serif;
 }
-.contact-right ::placeholder {
+.contact-right .review-form ::placeholder {
   font-family: "Montserrat", sans-serif;
 }
-.contact-right .submit {
+.contact-right .review-form .submit {
   border-radius: 15px;
   border: rgba(255, 255, 255, 0) 2px solid;
   outline: none;
@@ -589,14 +590,14 @@ h4 {
   background-color: #48beff;
   margin: 25px;
 }
-.contact-right .submit:hover {
+.contact-right .review-form .submit:hover {
   background-color: white;
   border: #48beff 2px solid;
   border-radius: 5px;
   color: #48beff;
 }
 @media (max-width: 800px) {
-  .contact-right .submit {
+  .contact-right .review-form .submit {
     cursor: pointer;
   }
 }
@@ -955,6 +956,11 @@ h4 {
 }
 .acts-done.home-page .acts-images-holder img:hover {
   transform: scale(1.35);
+}
+@media (max-width: 800px) {
+  .acts-done.home-page .acts-images-holder img:hover {
+    transform: none;
+  }
 }
 @media (max-width: 800px) {
   .acts-done.home-page .acts-images-holder img:nth-last-child(-n + 2) {
