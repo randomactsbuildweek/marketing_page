@@ -2,6 +2,9 @@
   padding: 0;
 }
 
+#carouselExampleControls {
+  width: 90%;
+}
 .container-top {
   background: linear-gradient(135deg, #48beff 0%, #48beff 29%, #3dfaff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48beff', endColorstr='#3dfaff', GradientType=1);
@@ -36,14 +39,7 @@
 .main-content p {
   .section-header();
   font-size: 25px;
-  // padding: 5px;
 
-  // @media @mobile {
-  //   font-size: 20px;
-  // margin: auto;
-  //   text-align: center;
-  //   padding-bottom: 20px;
-  // }
   @media @tablet {
     .section-header();
     font-size: 20px;
@@ -162,6 +158,23 @@ h4 {
     width: 100%;
   }
 
+  h4 {
+    text-align: center;
+    font-size: 25px;
+
+    @media @tablet {
+      text-align: center;
+    }
+  }
+
+  p {
+    text-align: center;
+    padding: 20px;
+
+    @media @tablet {
+      text-align: center;
+    }
+  }
   .review-form {
     .custom-flex();
     flex-wrap: wrap;
@@ -175,61 +188,36 @@ h4 {
       padding-bottom: 20px;
       margin: 10px;
 
-    .review-input {
-      width: 38%;
-      padding: 20px;
-      margin: auto;
+      .review-input {
+        width: 38%;
+        padding: 20px;
+        margin: auto;
+        .form-item-styling();
+        font-family: "Montserrat", sans-serif;
+      }
+    }
+
+    .review-textarea {
+      width: 87%;
+      padding: 25px;
+      margin-top: 15px;
       .form-item-styling();
+      resize: none;
+    }
+
+    :focus {
       font-family: "Montserrat", sans-serif;
     }
-  }
-
-  h4 {
-    text-align: center;
-    font-size: 25px;
-
-    @media @mobile {
-      text-align: center;
+    ::placeholder {
+      font-family: "Montserrat", sans-serif;
     }
+    .submit {
+      .basic-button();
+      margin: 25px;
 
-    @media @tablet {
-      text-align: center;
-    }
-  }
-
-  p {
-    text-align: center;
-    padding: 20px;
-
-    @media @mobile {
-      text-align: center;
-    }
-
-    @media @tablet {
-      text-align: center;
-    }
-  }
-
-  .review-textarea {
-    width: 87%;
-    padding: 25px;
-    margin-top: 15px;
-    .form-item-styling();
-    resize: none;
-  }
-
-  :focus {
-    font-family: "Montserrat", sans-serif;
-  }
-  ::placeholder {
-    font-family: "Montserrat", sans-serif;
-  }
-  .submit {
-    .basic-button();
-    margin: 25px;
-
-    @media @tablet {
-      cursor: pointer;
+      @media @tablet {
+        cursor: pointer;
+      }
     }
   }
 }
